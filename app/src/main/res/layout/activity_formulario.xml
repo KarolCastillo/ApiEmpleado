@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8EFD3"
+    android:backgroundTint="#E68FDD"
+    tools:context=".FormularioActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="EMPLEADOS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="68dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#680D78"
+        android:onClick="regresarMenu"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <EditText
+        android:id="@+id/edtDireccion"
+        android:layout_width="277dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="DIRECCION"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <EditText
+        android:id="@+id/edtCodigo"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#050505"
+        android:ems="10"
+        android:hint="CODIGO EMPLEADO"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="277dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="TELEFONO"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="279dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="CORREO"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/edtDepartamento"
+        android:layout_width="281dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="DEPARTAMENTO"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <EditText
+        android:id="@+id/edtEmpleado"
+        android:layout_width="279dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="NOMBRE"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="76dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#680D78"
+        app:icon="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="165dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#680D78"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="161dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#680D78"
+        android:text="ELIMINAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="155dp"
+        android:layout_height="37dp"
+        android:backgroundTint="#680D78"
+        android:text="MODIFICAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtCorreo"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
