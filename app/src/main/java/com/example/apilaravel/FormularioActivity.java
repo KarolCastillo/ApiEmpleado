@@ -30,6 +30,7 @@ public class FormularioActivity extends AppCompatActivity {
     EditText edtCodigo, edtEmpleado, edtTelefono, edtCorreo, edtDireccion, edtDepartamento;
     Button btnEditar;
     Button btnBuscar;
+   // Button btnListar;
     Button btnEliminar;
 
     Button btnRegistrar;
@@ -47,27 +48,28 @@ public class FormularioActivity extends AppCompatActivity {
         edtDepartamento=(EditText) findViewById(R.id.edtDepartamento);
         btnEditar=(Button) findViewById(R.id.btnEditar);
         btnBuscar=(Button) findViewById(R.id.btnBuscar);
+        //btnListar=(Button) findViewById(R.id.btnListar);
         btnEliminar=(Button) findViewById(R.id.btnEliminar);
         btnRegistrar=(Button) findViewById(R.id.btnRegistrar);
 
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                editarEmpleado("http://18.219.29.239/api/edit-empleados/25");
+                editarEmpleado("http://20.42.112.204/api/edit-empleados/19");
             }
         });
 
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buscarEmpleado("http://18.219.29.239/api/get-empleados"+edtCodigo.getText()+"");
+                buscarEmpleado("http://20.42.112.204/api/get-empleado/"+edtCodigo.getText()+"");
             }
         });
 
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eliminarEmpleado("http://18.219.29.239/api/delete-empleados/25");
+                eliminarEmpleado("http://20.42.112.204/api/delete-empleados/22");
             }
 
         });
@@ -75,11 +77,10 @@ public class FormularioActivity extends AppCompatActivity {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                crearEmpleado("http://18.219.29.239/api/save-empleados");
+                crearEmpleado("http://20.42.112.204/api/save-empleados");
             }
         });
     }
-
     private void editarEmpleado(String URL){
 
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
@@ -210,6 +211,12 @@ public class FormularioActivity extends AppCompatActivity {
     public void regresarMenu(View view){
         Intent regresarmenu = new Intent(this, MainActivity.class);
         startActivity(regresarmenu);
+
+    }
+    public void irFormulariolista(View view){
+
+        Intent irformulariolista = new Intent(this, ListarActivity.class);
+        startActivity(irformulariolista);
 
     }
 }

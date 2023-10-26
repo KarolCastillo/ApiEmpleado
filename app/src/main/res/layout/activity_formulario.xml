@@ -19,24 +19,24 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <Button
         android:id="@+id/botonRegresar"
-        android:layout_width="68dp"
-        android:layout_height="48dp"
+        android:layout_width="69dp"
+        android:layout_height="44dp"
         android:backgroundTint="#680D78"
         android:onClick="regresarMenu"
         app:icon="@android:drawable/ic_menu_revert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <EditText
         android:id="@+id/edtDireccion"
@@ -119,16 +119,30 @@
 
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="76dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
         android:backgroundTint="#680D78"
-        app:icon="@android:drawable/ic_menu_search"
+        app:icon="@android:drawable/ic_search_category_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintHorizontal_bias="0.976"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#680D78"
+        android:onClick="irFormulariolista"
+        app:icon="@android:drawable/ic_menu_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
 
     <Button
         android:id="@+id/btnRegistrar"
