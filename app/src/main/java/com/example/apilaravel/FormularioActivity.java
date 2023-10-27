@@ -55,7 +55,7 @@ public class FormularioActivity extends AppCompatActivity {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                editarEmpleado("http://20.42.112.204/api/edit-empleados/19");
+                editarEmpleado("http://20.42.112.204/api/edit-empleados/24");
             }
         });
 
@@ -69,7 +69,7 @@ public class FormularioActivity extends AppCompatActivity {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eliminarEmpleado("http://20.42.112.204/api/delete-empleados/22");
+                eliminarEmpleado("http://20.42.112.204/api/delete-empleados/24");
             }
 
         });
